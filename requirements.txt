@@ -1,9 +1,8 @@
 joblib 
 numpy
-cv2
-queue
+opencv-python
 scipy.ndimage
-sys
 matplotlib
 numba 
 argparse
+scikit-video
