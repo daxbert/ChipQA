@@ -22,7 +22,7 @@ See requirements.txt
 To extract features on SDR 8 bit MP4 or AVI files, run
 ```
 
-python3 chipqa.py --input_file path/to/input_file --results_folder path/to/output_file
+python3 chipqa.py --input_file path/to/input_file --results_file path/to/output_file
 
 ```
 `input_file` is the .mp4 video from which chipqa features will be extracted.
@@ -31,7 +31,7 @@ python3 chipqa.py --input_file path/to/input_file --results_folder path/to/outpu
 To extract features on SDR YUV or HDR YUV files, run
 ```
 
-python3 chipqa_yuv.py --input_file path/to/input_file --results_folder path/to/output_file --width W --height H --bit_depth {8/10/12} --color_space {BT2020/BT709}
+python3 chipqa_yuv.py --input_file path/to/input_file --results_file path/to/output_file --width W --height H --bit_depth {8/10/12} --color_space {BT2020/BT709}
 
 ```
 
