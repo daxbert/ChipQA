@@ -29,11 +29,11 @@ def _extract_subband_feats(mscncoefs):
 
 def extract_on_patches(img, blocksizerow, blocksizecol):
     h, w = img.shape
-    blocksizerow = np.int(blocksizerow)
-    blocksizecol = np.int(blocksizecol)
+    blocksizerow = np.int64(blocksizerow)
+    blocksizecol = np.int64(blocksizecol)
     patches = []
-    for j in range(0, np.int(h-blocksizerow+1), np.int(blocksizerow)):
-        for i in range(0, np.int(w-blocksizecol+1), np.int(blocksizecol)):
+    for j in range(0, np.int64(h-blocksizerow+1), np.int64(blocksizerow)):
+        for i in range(0, np.int64(w-blocksizecol+1), np.int64(blocksizecol)):
             patch = img[j:j+blocksizerow, i:i+blocksizecol]
             patches.append(patch)
 
